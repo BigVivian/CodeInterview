@@ -8,6 +8,11 @@ public class Print1ToN_12 {
 
 	// 递归求数字排序问题
 	public void print1ToMaxNDigits(int n) {
+
+		if (n <= 0) {
+			return;
+		}
+
 		int[] number = new int[n];
 
 		for (int i = 0; i <= n - 1; i++) {
@@ -46,7 +51,7 @@ public class Print1ToN_12 {
 
 	public static void main(String[] args) {
 		Print1ToN_12 test = new Print1ToN_12();
-		test.print1ToMaxNDigits(3);
+		test.print1ToMaxNDigits(2);
 	}
 
 }
