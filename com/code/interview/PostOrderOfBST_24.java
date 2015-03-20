@@ -30,7 +30,7 @@ public class PostOrderOfBST_24 {
 
 		// 找到左子树的起始
 		int i = 0;
-		for (i = start; i <= end; i++) {
+		for (i = start; i <= end - 1; i++) {
 			if (sequence[i] > root) {
 				break;
 			}
@@ -40,7 +40,7 @@ public class PostOrderOfBST_24 {
 
 		// 判断右子树是不是都大于根节点
 		int rightStart = i;
-		for (int tmp = rightStart; tmp <= end; tmp++) {
+		for (int tmp = rightStart; tmp <= end - 1; tmp++) {
 			if (sequence[tmp] < root) {
 				return false;
 			}
@@ -63,7 +63,7 @@ public class PostOrderOfBST_24 {
 
 	public static void main(String[] args) {
 		PostOrderOfBST_24 test = new PostOrderOfBST_24();
-		int[] sequence = { 5, 7, 6, 9, 11, 10, 8 };
+		int[] sequence = { 5, 4, 3, 2, 1 };
 		boolean res = test.isPostOrderOfBST(sequence);
 		System.out.println(res);
 	}
