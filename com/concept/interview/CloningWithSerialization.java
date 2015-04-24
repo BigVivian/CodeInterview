@@ -23,6 +23,7 @@ import java.io.ObjectInputStream;
  * 
  */
 public class CloningWithSerialization {
+
 	@SuppressWarnings("unchecked")
 	static T clone(T t) throws Exception {
 		// Check if T is instance of Serializeble other throw
