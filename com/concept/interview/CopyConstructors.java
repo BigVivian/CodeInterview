@@ -1,7 +1,7 @@
 package com.concept.interview;
 
 /**
- * Copy Constructors
+ * 复制构造函数 - Copy Constructors
  * 
  * @author Vivian
  * 
